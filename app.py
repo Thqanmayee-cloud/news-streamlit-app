@@ -3,7 +3,7 @@ import requests
 
 st.title("📰 News Dashboard")
 
-api_key = st.text_input("Enter API Key", type="password")
+api_key = st.secrets["NEWS_API_KEY"]
 
 country = st.selectbox("Country", ["us", "in", "gb", "au"])
 category = st.selectbox("Category", ["general", "business", "sports", "technology"])
